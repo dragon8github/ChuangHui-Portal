@@ -1,5 +1,5 @@
 {
-  "name": "chuanghui-portal",
+  "name": "chuanghui-vue-portal",
   "version": "0.0.1",
   "main": "src/components/chuanghui-portal.vue",
   "description": "ChuangHui Vue Components",
