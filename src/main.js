@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Portal from '@/components/Portal.vue'
+import Portal from 'Portal'
 
 Vue.component(Portal.name, Portal)
 

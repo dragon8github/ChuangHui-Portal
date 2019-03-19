@@ -9,12 +9,12 @@
 ##### Using NPM
 
 ```bash
-npm install chuanghui-Portal
+npm install chuanghui-portal
 ```
 
 ##### Using Yarn
 ```bash
-yarn add chuanghui-Portal
+yarn add chuanghui-portal
 ```
 
 ### Usage
@@ -24,7 +24,7 @@ main.js
 ```vue
 import Vue from 'vue'
 import App from './App'
-import Portal from '@/components/Portal.vue'
+import Portal from '@/components/chuanghui-portal.vue'
 
 Vue.component(Portal.name, Portal)
 

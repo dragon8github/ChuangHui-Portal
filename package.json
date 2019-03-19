@@ -1,10 +1,9 @@
 {
-  "name": "ChuangHui-Portal",
+  "name": "chuanghui-portal",
   "version": "0.0.1",
-  "main": "src/components/Portal.vue",
+  "main": "src/components/chuanghui-portal.vue",
   "description": "ChuangHui Vue Components",
   "author": "lizhaohong <928532756@qq.com>",
-  "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",

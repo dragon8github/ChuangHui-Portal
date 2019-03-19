@@ -1,8 +1,8 @@
 <template>
-    <div class="Portal">
-        <div class="Portal__menu"></div>
-        <div class="Portal__topbar"></div>
-        <div class="Portal__body">
+    <div class="chuanghui-portal">
+        <div class="chuanghui-portal__menu"></div>
+        <div class="chuanghui-portal__topbar"></div>
+        <div class="chuanghui-portal__body">
           <slot></slot>
         </div>
     </div>
@@ -11,17 +11,17 @@
 <script>
 import axios from 'axios'
 export default {
-  name: 'Portal',
+  name: 'chuanghui-portal',
   data () {
     return {
-       
+       api: 'http://localhost'
     }
   },
   methods: {
       getMenuData () {
           axios({
             method: 'post',
-            url: 'http://localhost/index.php',
+            url: `${url}/index.php`,
           }).then(response => {
             console.log(response)
           })
@@ -37,16 +37,16 @@ export default {
 
   },
   beforeMount () {
-      this.getMenuData()
+      // this.getMenuData()
   }
 }
 </script>
 
 <style scoped>
-.Portal {
+.chuanghui-portal {
 }
 
-  .Portal__topbar {
+  .chuanghui-portal__topbar {
     position: fixed;
     height: 50px;
     width: 100%;
@@ -57,7 +57,7 @@ export default {
     z-index: 199307100337;
   }
 
-  .Portal__menu {
+  .chuanghui-portal__menu {
     position: fixed;
     width: 50px;
     top: 50px;
@@ -70,7 +70,7 @@ export default {
     transition: all .3s cubic-bezier(0,0,.2,1);
   }
 
-  .Portal__body {
+  .chuanghui-portal__body {
     position: absolute;
     top: 50px;
     left: 50px;
